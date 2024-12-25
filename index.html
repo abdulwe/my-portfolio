@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a564d0f1bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>kiddoblaqqggi Portfolio | Welcome</title>
+</head>
+
+
+<body>
+    <div id="home">
+        <div class="container">
+
+            <nav>
+                <h1 class="logo"><span class="primary_color"><i class="fa-solid fa-code"></i>kiddo</span> Blaqq</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+
+
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>FullStack Developer</p>
+                <h1>Hi, I'm <span class="primary_color">A.Malik</span><br>A.Raheem From Nigeria</h1>
+            </div>
+
+        </div>
+    </div>
+    <!------------About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="img/code1.jpg" alt=""></div>
+                <div class="about-col-2">
+                    <h1 class="subtitle
+                    ">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet explicabo facere omnis
+                        expedita ratione libero ducimus, doloremque et in, vitae nulla iure dolor optio. Atque
+                        perspiciatis ipsum porro odit neque quos nulla, rerum doloribus accusamus qui magnam, aspernatur
+                        ea. Ipsam facere eius nemo itaque tenetur ad, doloribus totam nesciunt.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="open('skills')">Skills</p>
+                        <p class="tab-links" onclick="open('experience')">Experience</p>
+                        <p class="tab-links" onclick="open('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="secondary_color">UI/UX</span><br>Designind Web/App interface
+                            </li>
+                            <li><span class="secondary_color">Web Developement</span><br>Web app Developement</li>
+                            <li><span class="secondary_color">App Developement</span><br>Building Android/ios apps</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="secondary_color">2021 - Current</span><br>UI/UX Design Training at ET
+                                institute</li>
+                            <li><span class="secondary_color">2019 - 2021</span><br>Team lead at StartApp LLC.</li>
+                            <li><span class="secondary_color">2017 - 2019</span><br>UI/UX Design Executive at Coin
+                                Digital Ltd.</li>
+                            <li><span class="secondary_color">2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="secondary_color">2016</span><br>UI/UX Design Training at ET Institute </li>
+                            <li><span class="secondary_color">2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span class="secondary_color">2014</span><br>BBA from ISM Bangalore</li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablinks of tabtitles) {
+                    tablinks.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+        </script>
+        
+
+
+
+
+
+</body>
+
+</html>
